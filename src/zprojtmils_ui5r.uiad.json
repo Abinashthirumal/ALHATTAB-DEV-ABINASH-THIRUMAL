@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Project Milestone",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Project Milestone"
+  },
+  "ui5AppDetails": {
+    "appId": "projectmilestone"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_8DA5226F0917018CE61DCDA93335D79CEE8DE07F_TM",
+    "semanticObject": "manage",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_8DA5226F0917018CE61DCDA93335D79CEE8DE07F_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Project Milestone"
+      }
+    }
+  ]
+}

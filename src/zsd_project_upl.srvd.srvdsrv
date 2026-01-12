@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition For Project Demand'
+define service ZSD_PROJECT_UPL {
+  expose ZC_PROJECT_UPL;
+}

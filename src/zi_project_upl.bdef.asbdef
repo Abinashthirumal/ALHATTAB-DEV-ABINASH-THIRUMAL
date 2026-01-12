@@ -1,0 +1,57 @@
+managed implementation in class zbp_i_project_upl unique;
+strict ( 2 );
+
+define behavior for ZI_PROJECT_UPL //alias <alias_name>
+persistent table zdb_projupload
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+
+  internal action autolo;
+  determination autoloading on modify { create; }
+  create;
+  update;
+  delete;
+
+
+   action post1 ;
+
+   field ( mandatory   ) ProjectElement , ParentProjectId ,ProjectId;
+
+   field( readonly ) Status ;
+
+
+
+    mapping for zdb_projupload {
+
+
+    Entprojectelementtype = entprojectelementtype;
+    IsMainMilestone = is_main_milestone;
+    ParentProjectId = parent_project_id;
+    PlannedEndDate = planned_end_date;
+    PlannedStartDate = planned_start_date;
+    ProjectElement = project_element;
+    ProjectElementDesc = project_element_desc;
+    ProjectId = project_id;
+    WbsIsBillingElement = wbs_is_billing_element;
+    WbsIsStatistical = wbs_is_statistical ;
+    WbselementId = wbselement_id;
+    Responseuuid = responseuuid;
+    Status = status;
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+}

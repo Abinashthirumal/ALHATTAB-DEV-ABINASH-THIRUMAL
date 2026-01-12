@@ -1,0 +1,50 @@
+managed implementation in class zbp_i_project_dem unique;
+strict ( 2 );
+
+define behavior for ZI_PROJECT_DEM //alias <alias_name>
+persistent table zdb_project_dem
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+   internal action autolo;
+  determination autoloading on modify { create; }
+  create;
+  update;
+  delete;
+ // field ( readonly ) Projectdemand, Demandtype;
+   action post1 ;
+
+  mapping for zdb_project_dem
+
+ {
+   Projectdemand  = projectdemand;
+   Demandtype = demandtype;
+   Material = material;
+   Materialgroup = materialgroup;
+   Plant = plant;
+   Projdmndrequestedquantity = projdmndrequestedquantity;
+   Wbselement = wbselement ;
+   Dateallignment =dateallignment;
+   Projectdemandcategory = projectdemandcategory;
+   Projectdemanddescription = projectdemanddescription;
+   Projectdemandenddate = projectdemandenddate;
+   Projectdemandname = projectdemandname;
+   Projectdemandstartdate = projectdemandstartdate;
+   Projectdemandstatus = projectdemandstatus;
+   Projectdemandtype = projectdemandtype;
+   Purchasecontract = purchasecontract;
+   Purchasecontractitem = purchasecontractitem;
+   Purchasinggroup = purchasinggroup;
+   Purchasinginforecord = purchasinginforecord;
+   Purchasingorganization = purchasingorganization;
+   Responseuuid = responseuuid;
+   Storagelocation = storagelocation;
+   Supplier = supplier;
+   Status = status;
+   PostingRemarks = posting_remarks;
+
+ }
+
+
+}
